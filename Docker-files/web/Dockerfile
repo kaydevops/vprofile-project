@@ -1,5 +1,5 @@
-FROM ngnix
-LABEL "Author="Kaydevops"
-LABEL "Project="vprofile-app"
-RUN rm -rf /etc/ngnix/conf.d/default.conf
-COPY nginvproaoo.conf /etc/ngnix/conf.d/vproapp.conf
+FROM nginx
+LABEL "Author"="Kaydevops"
+LABEL "Project"="vprofile-app"
+RUN rm -rf /etc/nginx/conf.d/default.conf
+COPY nginvproapp.conf /etc/nginx/conf.d/vproapp.conf
